@@ -1,1 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>成語小學堂｜錯題本</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="row" style="justify-content:space-between;">
+    <h1>成語小學堂｜錯題本</h1>
+    <button class="btn secondary" id="toHome">回首頁</button>
+  </div>
+</header>
+
+<div class="container grid">
+  <div class="card">
+    <div class="row" style="justify-content:space-between;">
+      <div class="badge" id="who"></div>
+      <button class="btn primary" id="toQuizWrong">只考錯題</button>
+    </div>
+  </div>
+
+  <div id="list" class="grid"></div>
+</div>
+
+<script src="app.js"></script>
+<script>App.initWrongbook();</script>
+</body>
+</html>
 
