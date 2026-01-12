@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>成語小學堂｜設定</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>成語小學堂｜首頁設定</h1>
+</header>
+
+<div class="container grid">
+  <div class="card">
+    <div class="row" style="justify-content:space-between;">
+      <div>
+        <div class="muted">目前小孩</div>
+        <div class="big" id="curChild">—</div>
+      </div>
+      <div class="row">
+        <button class="btn secondary" id="wrongbookBtn">錯題本</button>
+        <button class="btn secondary" id="adminBtn">後台（YouTube）</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card grid">
+    <div class="row">
+      <label>小孩：</label>
+      <select id="child"></select>
+    </div>
+
+    <div>
+      <div class="row"><label>成語分類（可複選）：</label><span class="muted small">選「全部」會自動取消其他</span></div>
+      <div id="cats" class="row" style="margin-top:8px;"></div>
+    </div>
+
+    <div class="row">
+      <label>題目數量：</label>
+      <select id="count">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+      </select>
+      <span class="muted small">（建議低年級：10～20）</span>
+    </div>
+
+    <div class="row">
+      <label>避開近期重複（天）：</label>
+      <select id="avoidDays">
+        <option value="0">不避開</option>
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+      </select>
+    </div>
+
+    <div>
+      <div class="row"><label>測驗模式（可複選）：</label></div>
+      <div id="modes" class="row" style="margin-top:8px;"></div>
+    </div>
+
+    <div class="row" style="justify-content:space-between;margin-top:8px;">
+      <button class="btn secondary" id="reset">重置本機資料</button>
+      <div class="row">
+        <button class="btn secondary" id="save">儲存設定</button>
+        <button class="btn primary" id="start">開始測驗</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="muted small">
+      提醒：YouTube 影片 ID 可在「後台」為每個成語設定。錯題本、設定、影片 ID 覆寫都存於本機瀏覽器（同一台裝置）。
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script>App.initIndex();</script>
+</body>
+</html>
+v
